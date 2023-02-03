@@ -1,0 +1,1118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+body {
+    background: #0C0C0C;
+}
+
+section {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Clase Main */
+
+.main {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main nav {
+    height: 70px;
+    width: 100%;
+
+    color: #ccccfa;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main nav img {
+    height: 50px;
+
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-h1 {
+    display: flex;
+    flex: 1;
+    padding-left: 40px;
+
+    align-items: center;
+}
+
+.main .marquee {
+    padding: 40px;
+    color: #b3b3fe;
+    font-weight: 900;
+    font-size: 190px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.main .bt-main {
+    font-style: italic;
+    letter-spacing: 3px;
+    animation: moven 12s linear infinite;
+    padding-right: 50px;
+}
+
+@keyframes moven {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+
+}
+
+/* Estilo letras main */ 
+
+h1 {
+    font-size: 80px;
+    color: #b3b3fe;
+    font-weight: 100;
+    position: relative;
+
+    cursor: default;
+}
+
+.hovered {
+    color: #fbfbfb;
+    font-weight: 900;
+}
+
+.hovered-adjacent {
+    color: #ccccfa;
+    font-weight: 400;
+}
+
+/* Clase Universe */
+
+.universe {
+    display: flex;
+    padding: 40px;
+}
+
+.universe p {
+    font-size: 20px;
+}
+
+.universe .container-universe {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.universe .container-universe img {
+    width: 50%;
+    height: 30%;
+
+    border-radius: 20px;
+}
+
+.universe .container-universe #medio {
+    margin-left: 25%;
+}
+
+.universe .container-universe-text {
+    color: #ccccfa;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* Clase Milkyway*/
+
+.milkyway {
+    padding: 40px;
+
+    display: flex;
+}
+
+.milkyway .milkyway-text {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #ccccfa;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.milkyway .milkyway-text h2 {
+    font-size: 60px;
+
+    margin-bottom: 5%;
+}
+
+.milkyway .milkyway-text p {
+    font-size: 20px;
+}
+
+.milkyway .milkyway-images {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+}
+
+.milkyway .milkyway-images .container-left {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.milkyway .milkyway-images .container-right {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.milkyway-images img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+/* Clase Solarsys */
+
+.solarsys {
+    display: flex;
+    flex-direction: column;
+
+    color: #ccccfa;
+}
+
+.solarsys .solarsys-text {
+    font-size: 20px;
+    text-align: center;
+
+    padding: 20px 40px;
+}
+
+.solarsys .marquee {
+    height: 250px;
+    padding: 10px;
+    color: #b3b3fe;
+    font-weight: 900;
+    font-size: 200px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.solarsys .bt-main {
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 3px;
+    animation: moven 6s linear infinite;
+    padding-right: 50px;
+}
+
+@keyframes moven {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+
+}
+
+/* Asteroid clase solarsys */
+
+.meteor img {
+    width: 300px;
+    transform: translateX(-100%);
+}
+
+/* Astronome class*/
+
+.planets {
+    display: flex;
+    min-height: 100vh;
+    padding: 40px;
+    color: #ccccfa;
+}
+
+.planets a {
+    display: inline-block;
+}
+
+.planets .planets-container {
+    width: 60%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "mercurio venus tierra"
+                         "marte sol jupiter"
+                         "saturno urano neptuno";
+    place-items: center;
+}
+
+.planets .planets-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 80%;
+    background: rgb(43, 43, 43);
+    border-radius: 20px;
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.planets .planets-container img {
+    width: 60%;
+    z-index: 1;
+    transform: translateZ(20px)
+}
+
+.planets .planets-container #sol {
+    width: 100%;
+    height: 100%;
+}
+
+.planets .planets-container #sol img{
+    width: 80%;
+    height: 80%;
+
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px)
+}
+
+.planets .text-container {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+}
+
+.planets .text-container h2 {
+    font-size: 60px;
+}
+
+.planets .text-container p {
+    font-size: 20px;
+    text-align: right;
+}
+
+.js-tilt-glare {
+    border-radius: 20px;
+}
+
+/* Clase foooter */
+
+footer {
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foo-svg {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foo-content{
+    width: 100%;
+
+    color: #0C0C0C;
+    background: #b3b3fe;
+
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+footer .foo-content .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .foo-content .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .foo-content .box figure img {
+    width: 250px;
+}
+
+footer .foo-content .social h2{
+    margin-bottom: 10px;
+}
+
+footer .foo-content .social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: black;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 20px;
+}
+
+footer .foo-content .social a:hover {
+    color: #b3b3fe;
+}
+
+footer .foo-content-dos {
+    background: #b3b3fe;
+    padding: 15px 10px;
+    text-align: center;
+    color: #0C0C0C;
+}
+
+/* MEDIAQUERYS */
+
+/* Main */
+
+@media screen and (max-width: 890px) {
+    .main h1{
+        font-size: 300%;
+    }
+
+    .main nav {
+        padding: 20px;
+        height: 60px;
+        font-size: 70%;
+    }
+
+    .main nav img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .main .main-h1 {
+        display: flex;
+        flex: 1;
+        padding-left: 20px;
+        height: 60%;
+    
+        align-items: center;
+    }
+
+    .main .marquee {
+        height: 40%;
+        padding: 40px;
+        color: #b3b3fe;
+        font-weight: 900;
+        font-size: 190px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .universe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .universe .container-universe {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .universe .container-universe .pop{
+        width: 80%;
+        height: 80%;
+    }
+
+    .universe .container-universe .pop2{
+        display: none;
+    }
+
+    .universe .container-universe .pop3{
+        display: none;
+    }
+
+    .universe .container-universe-text {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .universe p{
+        font-size: 70%;
+        text-align: center;
+    }
+
+    
+    .milkyway {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .milkyway .milkyway-text {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .milkyway .milkyway-text h2{
+        font-size: 100%;
+    }
+
+    .milkyway .milkyway-text p{
+        font-size: 100%;
+    }
+
+    .milkyway .milkyway-images {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .milkyway .milkyway-images img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .milkyway .milkyway-images .container-left {
+        display: none;
+    }
+
+    .milkyway .milkyway-images .container-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .milkyway .milkyway-images .container-right #disapear {
+        display: none;
+    }
+
+    .solarsys {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solarsys .marquee {
+        height: 200px;
+        color: #b3b3fe;
+        font-weight: 900;
+        font-size: 190px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .solarsys .solarsys-text {
+        padding: 20px;
+    }
+
+    .solarsys .bt-main {
+        height: auto;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 3px;
+        animation: moven 6s linear infinite;
+        padding-right: 50px;
+    }
+
+    .solarsys .meteor img {
+        width: 150px;
+        transform: translateX(-100%);
+    }
+
+    .planets{
+        height: auto;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planets .planets-container {
+        width: 100%;
+        height: 360px;
+
+        margin-bottom: 50px;
+    }
+
+    .planets .text-container{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .planets .text-container h2{
+        font-size: 20px;
+    }
+
+    .planets .text-container p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    footer .foo-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .foo-content .box figure img {
+        width: 150px;
+    }
+
+    footer #aboutme {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .foo-content-dos {
+        font-size: 80%;
+    }
+
+    footer .foo-content .social a {
+        font-size: 80%;
+
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    footer .foo-content .social .iconos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* @media screen and (max-width: 820px) {
+    
+    .universe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .universe .container-universe {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .universe .container-universe .pop2{
+        display: none;
+    }
+
+    .universe .container-universe .pop3{
+        display: none;
+    }
+} */
+
+/* @media screen and (width: 520px) {
+    .main h1{
+        font-size: 20%;
+    }
+
+    .main nav {
+        padding: 20px;
+    }
+
+    .main .main-h1 {
+        display: flex;
+        flex: 1;
+        padding-left: 20px;
+        height: 60%;
+    
+        align-items: center;
+    }
+
+    .main .marquee {
+        height: 40%;
+        padding: 40px;
+        color: #b3b3fe;
+        font-weight: 900;
+        font-size: 190px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .universe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .universe .container-universe {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .universe .container-universe .pop{
+        width: 80%;
+        height: 80%;
+    }
+
+    .universe .container-universe .pop2{
+        display: none;
+    }
+
+    .universe .container-universe .pop3{
+        display: none;
+    }
+
+    .universe .container-universe-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .universe p{
+        font-size: 60%;
+        text-align: center;
+    }
+
+    
+    .milkyway {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .milkyway .milkyway-text {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .milkyway .milkyway-text h2{
+        font-size: 20px;
+    }
+
+    .milkyway .milkyway-text p{
+        font-size: 15px;
+    }
+
+    .milkyway .milkyway-images {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+    }
+
+    .milkyway .milkyway-images .container-left {
+        display: none;
+    }
+
+    .milkyway .milkyway-images .container-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .milkyway .milkyway-images .container-right #disapear {
+        display: none;
+    }
+
+    .solarsys {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solarsys .marquee {
+        height: 200px;
+        color: #b3b3fe;
+        font-weight: 900;
+        font-size: 190px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .solarsys .solarsys-text {
+        padding: 20px;
+    }
+
+    .solarsys .bt-main {
+        height: auto;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 3px;
+        animation: moven 6s linear infinite;
+        padding-right: 50px;
+    }
+
+    .solarsys .meteor img {
+        width: 150px;
+        transform: translateX(-100%);
+    }
+
+    .planets{
+        height: auto;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planets .planets-container {
+        width: 100%;
+        height: 360px;
+
+        margin-bottom: 50px;
+    }
+
+    .planets .text-container{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .planets .text-container h2{
+        font-size: 20px;
+    }
+
+    .planets .text-container p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    footer .foo-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .foo-content .box figure img {
+        width: 150px;
+    }
+
+    footer #aboutme {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .foo-content-dos {
+        font-size: 80%;
+    }
+}
+
+@media screen and (width: 800px) {
+
+    .main nav {
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .main nav img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main h1{
+        font-size: 90px;
+    }
+
+    .main nav {
+        padding: 20px;
+    }
+
+    .main .main-h1 {
+        display: flex;
+        flex: 1;
+        padding-left: 20px;
+        height: 60%;
+    
+        align-items: center;
+    }
+
+    .main .marquee {
+        height: 250px;
+        padding: 40px;
+        color: #b3b3fe;
+        font-weight: 900;
+        font-size: 190px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .universe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .universe .container-universe {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .universe .container-universe .pop{
+        width: 80%;
+        height: 80%;
+    }
+
+    .universe .container-universe .pop2{
+        display: none;
+    }
+
+    .universe .container-universe .pop3{
+        display: none;
+    }
+
+    .universe .container-universe-text {
+        font-size: 60px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .universe p{
+        font-size: 60%;
+        text-align: center;
+    }
+
+    
+    .milkyway {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .milkyway .milkyway-text {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .milkyway .milkyway-text h2{
+        font-size: 40px;
+    }
+
+    .milkyway .milkyway-text p{
+        font-size: 27px;
+    }
+
+    .milkyway .milkyway-images {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+    }
+
+    .milkyway .milkyway-images img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .milkyway .milkyway-images .container-left {
+        display: none;
+    }
+
+    .milkyway .milkyway-images .container-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .milkyway .milkyway-images .container-right #disapear {
+        display: none;
+    }
+
+    .solarsys {
+        width: 100%;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solarsys .marquee {
+        height: 200px;
+        color: #b3b3fe;
+        font-weight: 900;
+        font-size: 190px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .solarsys .solarsys-text {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .solarsys .bt-main {
+        height: auto;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 3px;
+        animation: moven 6s linear infinite;
+        padding-right: 50px;
+    }
+
+    .solarsys .meteor img {
+        width: 250px;
+        transform: translateX(-100%);
+    }
+
+    .planets{
+        height: auto;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planets .planets-container {
+        width: 100%;
+        height: 1050px;
+    }
+
+    .planets .text-container{
+        width: 100%;
+        padding-bottom: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .planets .text-container h2{
+        font-size: 50px;
+    }
+
+    .planets .text-container p{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer .foo-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .foo-content .box figure img {
+        width: 300px;
+    }
+
+    footer .foo-content .social {
+        display: none;
+    }
+
+    footer #aboutme {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    footer #aboutme h2 {
+        font-size: 50px;
+    }
+
+    footer #aboutme p {
+        font-size: 30px;
+    }
+
+    footer .foo-content-dos {
+        font-size: 25px;
+    }
+
+    footer .foo-svg svg {
+        vertical-align: bottom;
+    }
+} */
